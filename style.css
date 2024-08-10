@@ -50,6 +50,10 @@ body {
     align-items: center;
 }
 
+.navbar__s4 {
+    display: none;
+}
+
 .mylearning{
     position: relative;
     cursor: pointer;
@@ -147,6 +151,12 @@ body {
     width: 300px;
 }
 
+.course-card{
+    flex: grow;
+    flex-basis: 20%;
+    margin: 5px;
+}
+
 .course-card img {
     height: 50%;
     width: 100%;
@@ -212,4 +222,24 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 
+}
+
+@media  screen and (max-width :800px) {
+    body{
+        font-size: 10px;
+    }
+}
+
+@media  screen and (max-width :600px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+
+    .categories{
+        display: none;
+    }
+
+    .navbar__s4{
+        display: block;
+    }
 }
